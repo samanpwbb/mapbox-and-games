@@ -1,0 +1,203 @@
+<!DOCTYPE html><html><head><title>Big</title><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+<link href='big.css' rel='stylesheet' type='text/css' />
+<link href='style.css' rel='stylesheet' type='text/css' />
+<script src='big.js'></script></head><body>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+
+<div>
+  <span class="center">
+  Designing games with Mapbox
+  </span>
+  <notes>I'm going to talk about using location data in games. Talk will be three parts: start by introducing Mapbox, then discuss what it means to use location in games, and then cover what our Unity SDK is capable of.</notes>
+</div>
+
+<div>
+  <span class="center">
+  Hi! I'm Saman, I work at Mapbox
+  </span>
+  <notes>An introduction: I work at Mapbox as a designer/developer. Background in is web design. At Mapbox, I make tools for designers, developers. I implemented a few features in the Unity SDK but my main focus is elsewhere.</notes>
+</div>
+
+<div>
+  <img src='images/saman-1.png' />
+  <span class="caption">
+  Normally, I design maps & tools for making maps
+  </span>
+  <notes>An introduction: I work at Mapbox as a designer/developer. Background in is web design. At Mapbox, I make tools for designers, developers. I implemented a few features in the Unity SDK but my main focus is elsewhere.</notes>
+</div>
+
+<div>
+  <img src='images/saman-game-1.gif' />
+  <span class="caption">
+  Early experiment with Mapbox + Games
+  </span>
+  <notes>Last summer there was a lot of buzz around games + maps, so I started doing some experiments with our web-based tools.</notes>
+</div>
+
+<div>
+  <img src='images/poke-gif.gif' />
+  <span class="caption">
+  Imitation Pokemon go map with Mapbox tools.
+  </span>
+  <notes>Here's another experiment. I re-created the pokemon go map with Mapbox tools, and made a little web app.</notes>
+</div>
+
+<div>
+  <img src='images/logos.png' />
+  <span class='caption'>Mapbox provides building blocks for location.</span>
+  <notes>Enough about me. Our roots are in web and mobile. Games are new for us. Use our tools to create the experience you want to provide users. Our maps power the weather channel, Lonely Planet, National Geographic, Mapquest.</notes>
+</div>
+
+<div>
+  <span class='center'>What does building blocks mean? Web APIs!</span>
+</div>
+
+<div>
+  <img src='images/data.png' />
+  <span class='caption'>Vector map tile API</span>
+  <notes>Vector tiles are an efficient delivery format for data. We can cut a huge dataset up into tiny pieces, and just deliver those pieces. It's fast and designed for runtime customization.</notes>
+</div>
+
+<div>
+  <img src='images/unity-vector.jpg' />
+  <span class='caption'>Vector tiles in Unity</span>
+  <notes>Our Unity SDK is designed to make it easy for you pull in data from vector tiles and generate meshes from the data at run time. You define how you want to generate the world, and every player everywhere will get transported into that world.</notes>
+</div>
+
+<div>
+  <img src='images/unity-vector-2.jpg' />
+  <span class='caption'>Vector tiles in Unity</span>
+  <notes>Our Unity SDK is designed to make it easy for you pull in data from vector tiles and generate meshes from the data at run time. You define how you want to generate the world, and every player everywhere will get transported into that world.</notes>
+</div>
+
+<div>
+  <img src='images/raster-data.png' />
+  <span class='caption'>Raster map tile API</span>
+  <notes>Raster tiles are another one of the services.</notes>
+</div>
+
+<div>
+  <img src='images/mesh.png' />
+  <span class='caption'>Use raster tiles for elevation meshes.</span>
+  <notes>Mapbox provides raster tiles that encode elevation data, so you can build meshes.</notes>
+</div>
+
+<div>
+  <img src='images/minecraft.gif' />
+  <span class='caption'>Procedurally generate worlds from raster data.</span>
+  <notes>Our games team has been getting really creative with raster data in Unity. This minecraft style map was generated based on real world raster data.</notes>
+</div>
+
+<div>
+  <img src='images/the-alps.jpg' />
+  <span class='caption'>Procedurally generate worlds from raster data.</span>
+  <notes>Here's a shot of the Alps.</notes>
+</div>
+
+<div>
+  <img src='images/geocoding.png' />
+  <span class='caption'>Geocoding API</span>
+  <notes>Reverse geocode to get the name for a set of location coordinates, or Forward geocode to find the coordinates that match any string.</notes>
+</div>
+
+<div>
+  <img src='images/geocoder.jpg' />
+  <span class='caption'>Connect users to the real world with geocoding.</span>
+  <notes>Here's an example of using the geocoder to get the address for a nearby cafe.</notes>
+</div>
+
+<div>
+  <img src='images/directions.png' />
+  <span class='caption'>Directions and traffic APIs</span>
+  <notes>Mapbox provides the API – giving developers as much flexibility as possible to build their own directions interactions. We're the only major mapping companiy that lets you have directions right in your app and lets you have control over the experience</notes>
+</div>
+
+<div>
+  <img src='unity-directions.png' />
+  <span class='caption'>The directions API in Unity.</span>
+  <notes>This screenshot shows off both the result of a directions API call, and it shows a visualization of our traffic vector tiles in Unity.</notes>
+</div>
+
+<div>
+  <img src='images/telemetry.png' />
+  <span class='caption'>We collect anonymized data from our <em>users</em> users</span>
+  <notes>Millions of miles of data. We use it to improve all our services: the basemap, the directions ETAs, and helps us know which parts of the world to focus our efforts on.</notes>
+</div>
+
+<div>
+  <img src='images/data-collection.jpg' />
+  <span class='caption'>Mapbox contributes data to OpenStreetMap</span>
+  <notes>OpenStreetMap is like the Wikipedia of Map data. Mapbox relies on OpenStreetMap as the source for a lot of our data. With the help of telemetry, we are able to contribute stead improvements back to the map that in turn benefits everyone who uses OpenStreetMap.</notes>
+</div>
+
+<div>
+  <img src='images/studio.png' />
+  <span class='caption'>We build design tools</span>
+  <notes>Data is great – but it's very challenging to build anything with just raw data. We also build tools that make it easy to create and edit your own map data, and build visualizaions with that data.</notes>
+</div>
+
+<div>
+  <img src='images/developers.gif' />
+  <span class='caption'>We build developer tools and core rendering technology</span>
+  <notes>Besides making visual design tools, we focus on the developer experience of using map data. We want to make it easy to build exactly the kinds of experiences developers want to build, on any platform (including Unity). We have manture SDKs for iOS, Android, and the web.</notes>
+</div>
+
+<div>
+  <span class='center'>What does it mean to use location in game design?</span>
+  <notes>I've showed off a little of what is possible. Now I want to talk about it means to actually turn some of these features into gameplay mechanics.</notes>
+</div>
+
+<div>
+  <img src='images/hunter.png' />
+  <span class='caption'>Or... unlocks very old types of gameplay experiences</span>
+  <notes>I think it's ironic that location based games sound kind of futuristic. Location based games are as old as civilization: ever heard of Hunting? Sports? Location is the context for play, always has been. What the Mapbox SDK is doing is providing an opportunity to bridge the forms of play with the newest forms.</notes>
+</div>
+
+<div>
+  <img src='images/pacmanhattan.png' />
+  <span class='caption'>Pacmanhattan (2014)</span>
+  <notes>Designers have been experimenting with location in games for a long time. A game of pacman is digitally superimposed over the real world, and people perform the roles of Pacman and the ghosts. The ghosts attempt to chase and catch Pacman, Pacman attempts to touch as many coins as possible. </notes>
+</div>
+
+<div>
+  <img src='images/pokemon.jpg' />
+  <span class='caption'>Pokemon Go (2016)</span>
+  <notes>Pokemon Go. I'm sure we all know about this one. Over 500 million downloads. Location data is at the core of the game. Location data powers all sorts of subtle and not so subtle parts of the game, from the basemap, to Pokemon spawn points, to the little display that tells you where you captured a pokemon (getting that name requires a reverse geocode).</notes>
+</div>
+
+<div>
+  <img src='images/pokemon-2.jpg' />
+  <span class='caption'>Location is everywhere in Pokemon Go!</span>
+  <notes>Pokemon Go has it's flaws, but it's a state of the art game that uses location to it's fullest and it's worth talking about. Made with Unity. 1) Reverse geocoding to find the name a name to match the coordinates where I got this Lapras. 2) A dataset of points of interest that define PokeStops 3) User location using Native APIs 4) Pokemon spawn points generated based on global basemap data from OpenStreetMap. 5) Finaly, user activity. You could build a game about any one of these mechanics.</notes>
+</div>
+
+<div>
+  <img src='images/moves.png' />
+  <span class='caption'>Games can be broadly defined</span>
+  <notes>Moves and other activity trackers can be viewed as games. Some of these apps even have competitive aspect, which makes them indistinguishable from a game. Uses passive mechanic of GPS tracking to give players a score.</notes>
+</div>
+
+<div style='font-size:10vmin;'>
+  <span class='center'>
+  Start experimenting! <a href='mapbox.com/unity'>mapbox.com/unity</a> to download the beta
+  </span>
+  <span class='caption'>Thank you! @samanbb on Twitter.</span>
+</div>
+
+<script type='text/javascript'>
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4e36eb1ef5a1f53d6f000001');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+</body>
+</html>

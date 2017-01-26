@@ -1,0 +1,37 @@
+body {
+  font-family: 'Roboto', Sans;
+  background:#333333;
+  background-size:100%;
+  color: rgba(255,255,255,.75);
+  margin:0;
+  padding:0;
+  font-weight: 700;
+}
+
+em {
+  font-style:italic;
+}
+
+a {
+  color: #52a1d8;
+  color:#000;
+  text-decoration:none;
+}
+
+div {
+  cursor:pointer;
+  cursor:hand;
+  line-height: 1.25;
+}
+
+div.center {
+  text-align:center;
+}
+
+notes {
+  display:none;
+}
+/* normally not good, but ok in context of full screen directional navigation */
+:focus {
+  outline: 0;
+}
